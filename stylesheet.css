@@ -1,0 +1,534 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+}
+
+h2,h3,h4,h5{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+ul,li,dl,dt,dd{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p{
+  margin:0 0 1em 0 ;
+}
+a{
+  text-decoration: none;
+  color:#000 ;
+}
+a:hover{
+  transition: .3s;
+  opacity: 0.6;
+
+}
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+/*---- header -----*/
+h1{
+margin: 0; 
+ position: relative;
+  bottom: 20px;
+}
+.header {
+  width:100%;
+  height: 60px;
+  position: fixed;
+  background-color: #d4d1d19f;
+  z-index: 5;
+
+}
+  .header-nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+
+  }
+  
+.header nav ul{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.header nav ul li {
+margin-right: 50px;
+}
+
+/*--note02--*/
+.mainvisual{
+  position: relative;
+  height: 600px;
+  margin-bottom: 120px;
+}
+.mainvisual img{
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 30%;
+  margin-top: 70px;
+}
+.mainvisual h2{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background :rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  padding: 1rem;
+}
+.bg1 {
+  background: #d5e06b;
+  height: 700px;
+  width: 45%;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  z-index: -1;
+}
+.greeting{
+  margin-bottom: 120px;
+}
+.greeting h2{
+  margin-bottom: 50px;
+  text-align: center;
+ }
+ 
+.greeting .contents{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+ 
+.greeting .contents  figure {
+  width: 50%;
+}
+.greeting .content {
+  width: 48%;
+}
+/* note3事業内容 */
+.work {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 120px;
+}
+.work::before{
+  content:"";
+  background: #7da083;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+.work h3 {
+  font-size: 1.8rem;
+  color: rgb(17, 17, 77);
+  text-align: center;
+  margin: 2rem 0;
+
+}
+.work h4{
+  text-align: center;font-size: 1rem;
+}
+.work ul{
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+}
+.work ul li{
+  width: 400px;
+
+}
+.work ul li figure{
+  margin: 0;
+}
+/* note3NEWS */
+.news{
+  margin-bottom: 220px;
+}
+.news .content-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+.news h2{
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: #e8e7e7;
+}
+.news li{
+  border-bottom: 2px dotted #444141;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.news li a{
+  color: #333333;
+}
+.news a:hover{
+  opacity: 0.6;
+}
+.news li time{
+  font-size: 0.75em;
+  color: #949494;
+  padding-right: 0px;
+  margin-right: 80px;
+  margin-left: 25px;
+}
+/* -----note4採用情報 -----------------------------*/
+.recruit{
+  position: relative;
+}
+.recruit-img img{
+  width: 80%;
+  height: 400px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.recruit-img::after{
+  content:"";
+  background: #e8e7e7;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.recruit h2 a{
+  position: absolute;  
+  top: 45%;
+  right: 52%;
+  width: 250px;
+  height: 60px;
+  background-color:rgba(255,255,255,0.6);
+
+  text-align: center;
+}
+.bg2{
+  position: absolute;
+  background: #e8e7e7;
+  height: 400px;
+  width: 45%;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
+/* note4フッターーーーーーーーーーー */
+footer .content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 ;
+  margin-left: 10%;
+}
+.address p{
+  line-height: 2;
+}
+footer ul{
+  display: flex;
+}
+footer ul li{
+  margin-right: 50px;
+  position: relative;
+  right: 100px;
+}
+
+.copylight p{
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 100px;
+  color: #333;
+  background-color: #e8e7e7;
+}
+/* ーーーーnote5ーーーー */
+.subvisual{
+  margin-bottom: 120px;
+background-image: url(pf_images/c-people.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.subvisual h1{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(247, 240, 238);
+  line-height: 200px;
+  font-weight: normal;
+}
+.company-greeting{
+  margin-bottom: 120px;
+}
+.company-greeting .contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.company-greeting h2{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.company-profile{
+  margin-bottom: 120px;
+}
+table.company{
+width: 100%;
+margin: 0 auto;
+border-top: 1px solid #e8e7e7  ;
+}
+table.company th{
+  background-color: rgb(230, 231, 231);
+  box-sizing: border-box;
+  padding: 20px;
+  width: 30%;
+  line-height: 1.5em;
+  text-align: left;
+  border-bottom: 1px solid rgb(230, 231, 231);
+}
+table.company td{
+  text-align: left;
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #e8e7e7;
+  line-height: 1.5em;
+}
+/*------ note6------------ */
+/* 事業内容ぺーじ */
+.work-description01 {margin-bottom: 240px;}
+.work-description01 dl{
+  /* width: 100%; */
+  position: relative;
+}
+.work-description01 dl dt img{
+  width: 54%;
+  height: 420px;
+  object-fit: cover;
+}
+.work-description01 dl dd{
+  width: 35%;
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  background-color: #ffffff;
+  padding: 40px;
+  z-index: 2;
+  /* margin-bottom: 100px; */
+  border:  double 4px black;
+}
+
+.work-description02 {
+  margin-bottom: 240px;
+  }
+  .work-description02 dl{
+    width: 100%;
+    position: relative;
+  }
+  .work-description02  dt img{
+    width: 54%;
+    height: 420px;
+    object-fit: cover;
+  }
+  .work-description02 dt{
+    display: flex;
+    justify-content:flex-end;
+  }
+  .work-description02  dd{
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    left: 1.5%;
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    z-index: 2;
+    border:  double 4px black;
+  }
+
+  .work-description03 {
+    margin-bottom: 400px;
+    }
+    .work-description03 dl{
+      width: 100%;
+      position: relative;
+    }
+    .work-description03 dl dt img{
+      width: 54%;
+      height: 420px;
+      object-fit: cover;
+    }
+    .work-description03 dl dd{
+      width: 54%;
+      position: absolute;
+      top: 15%;
+      left: 58%;
+      background-color: #ffffff;
+      padding: 40px;
+      z-index: 2;
+      border:  double 4px black;
+      width: 35%;
+    }
+    /* 採用ページ */
+.recruit-point h2{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.recruit-table{
+  margin-bottom: 40px;
+}
+table.content{
+  width: 100%;
+  border-top:1px solid #e8e7e7 ;
+}
+table.content th{
+  background-color: #e8e7e7;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 30%;
+  line-height: 1.5em;
+  text-align: left;
+}
+table.content th:first-of-type{
+  border-bottom: 1px solid #ffffff;
+}
+table.content td{
+  text-align-last: left;
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #e8e7e7;
+  line-height: 1.5em;
+}
+/* お問い合わせページ */
+.form{
+  margin-bottom: 80px;
+}
+.form dl{
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted #676767;
+}
+.form dl:first-of-type{
+  border-top: 1px dotted #676767;
+}
+.form dt{
+  width: 300px;
+  box-sizing: border-box;
+  padding: 20px 0 20px 10px;
+  line-height: 1em;
+}
+.form dd{
+  width: calc(100%-300px);
+  box-sizing: border-box;
+}
+.form dd input,
+.form dd select,
+.form dd textarea{
+  font-size: 1.2rem;
+  color: rgb(56, 55, 55);
+  border: 1px solid #555;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.form dd input,
+.form dd select{
+  line-height: 8%;
+  height: 45px;
+  padding: 0 20px;
+}
+.form dd textarea{
+  height: 140px;
+  line-height: 2em;
+  padding: 20px;
+}
+.form dl .name dd{
+padding: 0 0 0 25px;
+}
+.form dl .name dd span{
+  margin :0 20px 0 0 ;
+}
+.form dl .name dd input{
+    width: 350px;
+}
+.form dl .name dd input:first-of-type{
+ margin: 0 50px 0 0; 
+}
+.form dl .furigana dd  {
+  padding: 0 0 0 10px;
+}
+.form dl .furigana dd span{
+  margin: 0 20px 0 0;
+}
+.form dl .furigana dd input{
+  width: 350px;
+}
+.form dl .furigana dd input:first-of-type{
+  margin: 0 30px 0 0 ;
+}
+.form dl .mail dd input{
+  width: calc(100%-20px);
+}
+.form dl .tell dd input{
+width: 200px;  
+}
+.form dl .tell dd span{
+  margin: 0 20px;
+}
+.form dl .zip dd input{
+  width: 200px;
+}
+.form dl .zip dd span{
+  margin: 0 20px;
+}
+.form dl .pref dd select{
+  width: 200px;
+}
+.form dl .address dd input{
+  width: calc(100%-20px);
+}
+.form dl .multi-text dd textarea{
+  width: calc(100%-20px);
+}
+.form .form-button{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+.form .form-button input{
+  display: block;
+  width: 250px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #353535;
+  border: 1px solid #353535;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+span{
+  margin: 0 20px;
+}
